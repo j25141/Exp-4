@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Brew Cafe | Organic Coffee and Pastries in Delhi</title>
+  <meta name="description" content="Fresh Brew Cafe serves organic coffee and fresh pastries in Delhi. See our menu, learn our story and get in touch.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Fresh Brew Cafe | Organic Coffee in Delhi">
+  <meta property="og:description" content="Organic coffee and fresh pastries, roasted every week.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <p class="brand">Fresh Brew Cafe</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Coffee roasted this week, poured today.</h1>
+        <p>Fresh Brew Cafe is a small organic coffee house in Delhi. Come for the espresso, stay for the pastries.</p>
+        <a class="button" href="#menu">See the menu</a>
+      </div>
+      <img src="images/coffee.svg" width="400" height="340"
+           alt="A steaming cup of coffee on a saucer">
+    </section>
+
+    <section id="menu" aria-labelledby="menu-title">
+      <h2 id="menu-title">Our menu</h2>
+      <div class="menu-grid">
+        <article>
+          <h3>Coffee</h3>
+          <dl>
+            <div><dt>Espresso</dt><dd>Rs 120</dd></div>
+            <div><dt>Cappuccino</dt><dd>Rs 160</dd></div>
+            <div><dt>Cold brew</dt><dd>Rs 190</dd></div>
+          </dl>
+        </article>
+        <article>
+          <h3>Pastries</h3>
+          <dl>
+            <div><dt>Croissant</dt><dd>Rs 90</dd></div>
+            <div><dt>Blueberry muffin</dt><dd>Rs 110</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About us</h2>
+      <p>We roast our beans every week and serve them in a quiet corner of the city. Everything we buy is organic and bought directly from farms.</p>
+      <p><a href="#about">Read our full story</a></p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact us</h2>
+      <form action="#" method="post">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="button">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Fresh Brew Cafe, Delhi</p>
+  </footer>
+</body>
+</html>

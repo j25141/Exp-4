@@ -1,0 +1,60 @@
+<html>
+<head>
+<!-- PROBLEM: no lang attribute on <html> -->
+<!-- PROBLEM: no <title> -->
+<!-- PROBLEM: no meta description -->
+<!-- PROBLEM: no viewport meta tag (page is not mobile friendly) -->
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#999}
+.top{background:#eee;padding:20px}
+.menu a{margin-right:18px;color:#bbb;text-decoration:none}
+.big{font-size:38px;font-weight:bold;color:#aaa}
+.med{font-size:24px;font-weight:bold;color:#aaa;margin-top:30px}
+.small{font-size:18px;font-weight:bold;color:#aaa;margin-top:14px}
+.box{padding:20px 40px}
+.btn{display:inline-block;background:#ccc;color:#fff;padding:10px 22px;cursor:pointer;margin-top:10px}
+.foot{background:#eee;padding:20px;margin-top:40px;color:#bbb}
+input,textarea{display:block;margin:8px 0;padding:8px;width:260px}
+</style>
+</head>
+<body>
+<!-- PROBLEM: everything is a <div>; no header, nav, main, section, footer -->
+<div class="top">
+  <div class="menu">
+    <a href="#">home</a><a href="#">menu</a><a href="#">about</a><a href="#">contact</a>
+    <!-- PROBLEM: no skip link; nav is not a <nav>; text colour #bbb on #eee is low contrast -->
+  </div>
+</div>
+
+<div class="box">
+  <!-- PROBLEM: heading order is wrong: h4 comes first, and the main title is a styled div -->
+  <h4>welcome</h4>
+  <div class="big">Fresh Brew Cafe</div>
+  <p>Organic coffee and fresh pastries in Delhi.</p>
+  <!-- PROBLEM: image has no alt text -->
+  <img src="images/coffee.svg" width="300">
+
+  <div class="med">Our Menu</div>
+  <!-- PROBLEM: fake headings made with div + CSS, not h2/h3 -->
+  <div class="small">Coffee</div>
+  <div>Espresso - Rs 120<br>Cappuccino - Rs 160<br>Cold Brew - Rs 190</div>
+  <div class="small">Pastries</div>
+  <div>Croissant - Rs 90<br>Blueberry Muffin - Rs 110</div>
+
+  <div class="med">About Us</div>
+  <p>We roast our beans every week and serve them in a quiet corner of the city.</p>
+  <!-- PROBLEM: link text "Click here" says nothing about the destination -->
+  <p>To read our story <a href="#">click here</a>.</p>
+
+  <div class="med">Contact Us</div>
+  <!-- PROBLEM: inputs have no <label>, only placeholders -->
+  <input type="text" placeholder="name">
+  <input type="text" placeholder="email">
+  <textarea placeholder="message"></textarea>
+  <!-- PROBLEM: button is a clickable <div>: not focusable by keyboard, not announced as a button -->
+  <div class="btn" onclick="alert('sent')">send</div>
+</div>
+
+<div class="foot">copyright Fresh Brew Cafe</div>
+</body>
+</html>
